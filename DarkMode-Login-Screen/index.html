@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Screen</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="flex items-center justify-center h-screen bg-[#6b727a]">
+    <div
+        class="bg-black w-[80vw] h-[95vh] rounded-[20px]
+        [background-image:radial-gradient(rgba(255,255,255,0.5)_1px,_transparent_0)]
+        bg-size-[30px_30px]
+        bg-position-[19px_-19px] noto-sans flex flex-col overflow-hidden relative"
+    >
+        <div class="absolute w-100 h-200 -bottom-100 left-0 bg-[linear-gradient(to_right,_#01d4d7,_#00cdbc)] rotate-[-60deg] blur-[70px] z-0"></div>
+        <div class="absolute w-100 h-200 -bottom-100 right-0
+        bg-[linear-gradient(to_right,_#0780f0,_#0774e1)]
+        rotate-[60deg] blur-[70px] z-0">
+        </div>
+        <div class="flex pt-7.5 pl-7.5 gap-2.5 bg-black rounded-tr-[20px] rounded-tl-[20px]">
+            <div class="w-3 h-3 rounded-full bg-[#ed6b5e]"></div>
+            <div class="w-3 h-3 rounded-full bg-[#f3bc50]"></div>
+            <div class="w-3 h-3 rounded-full bg-[#60bf53]"></div>
+        </div>
+        <div class="aldrich text-white flex justify-center bg-black tracking-[3px] scale-y-50 p-1.25">
+            IMMYBOT
+        </div>
+        <div class="flex flex-col grow justify-center items-center bg-[linear-gradient(to_bottom,_black_20%,_transparent)]">
+            <h2 class="text-white font-thin text-[28px]">Welcome back, Alex!</h2>
+            <div class="cursor-pointer flex items-center bg-[#02ead2] px-6.25 py-3.25 hover:bg-[rgb(0,130,251)] transition-all duration-500 ease-in-out">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/free-microsoft-26-722716.png?f=webp&w=256" alt="" class="h-3.75 mr-1.25">
+                <button class="text-black font-extrabold text-[7px] bg-none border-none tracking-[1px] cursor-pointer">SIGN IN WITH MICROSOFT</button>
+            </div>
+        </div>
+        <footer class="flex justify-center items-center text-[#80a2ad] text-[12px] font-normal p-10">
+            (C) 2023 Immense Networks
+        </footer>
+    </div>
+</body>
+</html>
