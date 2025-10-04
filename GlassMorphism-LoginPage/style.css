@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(30em) rotateY(10deg) rotateX(-5deg);
+    }
+
+    20% {
+        transform: perspective(40em) rotateY(20deg) rotateX(0deg);
+    }
+
+    40% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+
+    60% {
+        transform: perspective(40em) rotateY(20deg) rotateX(0deg);
+    }
+
+    80% {
+        transform: perspective(50em) rotateY(30deg) rotateX(10deg);
+    }
+
+    100% {
+        transform: perspective(30em) rotateY(10deg) rotateX(-5deg);
+    }
+}
+
+.custom-animate {
+    animation: animate 4s ease-in-out infinite;
+}
