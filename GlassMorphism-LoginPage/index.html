@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="poppins bg-black">
+    <div class="container relative">
+        <div class="w-37.5 h-37.5 rounded-full bg-[linear-gradient(#1fa3f1,_#60b2eb)] absolute left-[20%] top-25"></div>
+        <div class="w-75 h-75 absolute left-[42%] top-62.5 rounded-[30px] bg-[linear-gradient(135deg,_#e0d305,_#cd952c)] rotate-60"></div>
+        <div class="bg-white/10 flex flex-col w-75 absolute top-37.5 left-100 px-5 py-7.5  backdrop-blur-[10px] rounded-[30px] custom-animate">
+            <h2 class="login-label my-5 mx-0 text-[#f5f5f5] text-center font-semibold tracking-[2px]">LOGIN HERE</h2>
+            <input type="text" placeholder="Enter Username" class="my-5 mx-0 outline-none bg-transparent border-b border-[#f5f5f5] placeholder:text-[#f5f5f5] text-[#f5f5f5]">
+            <input type="password" placeholder="Enter Password" class="my-5 mx-0 outline-none bg-transparent border-b border-[#f5f5f5] placeholder:text-[#f5f5f5] text-[#f5f5f5]">
+            <button class="my-5 mx-0 p-2.5 text-base bg-[#f5f5f5] border-none cursor-pointer">Login</button>
+            <a href="#" class="my-5 mx-0 text-[#f5f5f5] text-[12px]">Forgot password</a>
+        </div>
+    </div>
+</body>
+</html>
