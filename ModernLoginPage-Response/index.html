@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modern Login Page</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen flex justify-center items-center bg-[linear-gradient(to_bottom_right,_#ff966d,_#fa538d,_#89379c)]">
+<div class="container w-[50vw] h-[60vh] grid grid-cols-[100%] md:grid-cols-2 shadow-[0_0_17px_10px_rgba(0,0,0,0.3)]  rounded-[20px]
+  bg-white
+  overflow-hidden">
+    <div class="hidden md:block relative design">
+        <div class="absolute bottom-0 -left-10 w-20 h-50 rounded-[40px] bg-[linear-gradient(#ff966d,_#fa538d,_#89379c)] -rotate-45"></div>
+        <div class="absolute -top-25 -left-20 w-55 h-112.5 rounded-[200px] bg-[linear-gradient(#ff966d,_#fa538d,_#89379c)] border-[30px] border-[#e2c5e2] -rotate-45"></div>
+        <div class="absolute -top-25 left-40 w-25 h-50 rounded-[70px] bg-[linear-gradient(#ff966d,_#fa538d,_#89379c)] -rotate-45"></div>
+        <div class="absolute -bottom-45 left-55 w-30 h-75 rounded-[70px] bg-[linear-gradient(#ff966d,_#fa538d)] -rotate-45"></div>
+    </div>
+    <div class="flex flex-col justify-center items-center relative bg-white">
+        <h3 class="mx-0 my-3.75">User Login</h3>
+        <div class="bg-[#e6e6e6] h-10 w-[60%] flex items-center rounded-[10px] px-3.75 py-0 mx-0 my-1.25">
+            <i class="ri-user-fill text-[#686868]"></i>
+            <input type="text" placeholder="Username" class="bg-none border-none outline-none w-full h-full ml-2.5 placeholder:text-[#9a9a9a]">
+        </div>
+        <div class="bg-[#e6e6e6] h-10 w-[60%] flex items-center rounded-[10px] px-3.75 py-0 mx-0 my-1.25">
+            <i class="ri-lock-fill text-[#686868]"></i>
+            <input type="password" placeholder="Password" class="bg-none border-none outline-none w-full h-full ml-2.5 placeholder:text-[#9a9a9a]">
+        </div>
+        <button class="w-[68%] p-2.5 text-white bg-[linear-gradient(to_right,_#ff966d,_#fa538d,_#89379c)] border-none rounded-[20px] cursor-pointer mt-2.5">LOGIN</button>
+        <a href="#" class="mt-3.75 text-xs text-[#9a9a9a] cursor-pointer">Forgot Username/Password?</a>
+        <div class="flex items-center absolute bottom-7.5">
+            <a href="#" class="text-xs text-[#9a9a9a] cursor-pointer">Create Your Account</a>
+            <i class="ri-arrow-right-fill text-[#9a9a9a] ml-2.5"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>
