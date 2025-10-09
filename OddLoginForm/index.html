@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Odd Login Form</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex justify-center items-center noto-sans h-screen w-screen bg-gradient-to-tr from-[#d10ede] to-[#2c9ed7]">
+    <div class="container w-125 h-125 flex justify-center items-center relative">
+    <div
+            class="login-bg-1 absolute w-82.5 h-95
+            bg-[linear-gradient(-45deg,_#ee00ff_20%,_#3dbeff_100%)]
+            rounded-tr-[40%] rounded-tl-[40%]
+            rounded-br-[40%] rounded-bl-[20%] -rotate-32"
+    >
+    </div>
+    <div class="login-bg-2 absolute w-85 h-90
+            bg-white/40 bottom-15 left-21.25
+            shadow-[inset_0_0_5px_5px_rgba(255,255,255,0.15)]
+            rounded-tr-[40%] rounded-tl-[40%]
+            rounded-br-[50%] rounded-bl-[40%] -rotate-20"
+    >
+    </div>
+    <div class="login-container w-67.5 z-1 flex flex-col items-center">
+        <div class="icon-wrapper bg-[#f2f3f5] w-25 h-25 rounded-full flex justify-center items-end relative mt-0 overflow-hidden">
+            <i class="ri-user-fill icon-big text-[88px] bg-[linear-gradient(90deg,_#ee00ff,_#3dbeff)] bg-clip-text text-transparent absolute -bottom-2"></i>
+        </div>
+        <h2 class="sign-in text-[#f2f3f5] text-2xl my-5">
+            Sign In
+        </h2>
+        <div class="input-holder flex my-2 w-full">
+            <div class="input-icon-wrapper-bg w-15 h-8.75 bg-[linear-gradient(90deg,_#ee00ff,_#3dbeff)] rounded-tl-[30%] rounded-tr-[50%] rounded-bl-[30%] rounded-br-[30%] rotate-10">
+                <div class="input-icon-wrapper flex justify-center items-center h-full -rotate-10">
+                    <i class="ri-user-fill input-icon text-[19.2px] text-[#f2f3f5]"></i>
+                </div>
+            </div>
+            <input type="text" placeholder="Username" class="text-[#f2f3f5] border border-[#f2f3f5] bg-none rounded-[20px] ml-2.5 pl-2.5 w-full focus:outline-none placeholder:text[rgba(242,243,245,0.5)]">
+        </div>
+        <div class="input-holder flex my-2 w-full relative">
+            <div class="input-icon-wrapper-bg w-15 h-8.75 bg-[linear-gradient(90deg,_#ee00ff,_#3dbeff)] rounded-tl-[30%] rounded-tr-[50%] rounded-bl-[30%] rounded-br-[30%] rotate-10">
+                <div class="input-icon-wrapper flex justify-center items-center h-full -rotate-10">
+                    <i class="ri-lock-fill input-icon text-[19.2px] text-[#f2f3f5]"></i>
+                </div>
+            </div>
+            <input type="password" placeholder="Password" class="text-[#f2f3f5] border border-[#f2f3f5] bg-none rounded-[20px] ml-2.5 pl-2.5 w-full focus:outline-none placeholder:text[rgba(242,243,245,0.5)]">
+            <div class="absolute right-2.5 top-1/2 -translate-y-1/2 cursor-pointer ">
+                <i class="ri-eye-line text-white text-base"></i>
+            </div>
+        </div>
+        <div class="remember-forgot flex justify-between w-full mb-5">
+            <div class="checkbox-wrapper flex items-center ml-11.25">
+                <input type="checkbox" id="lbl">
+                <label class="lbl-remember text-xs text-[#f2f3f5] font-normal" for="lbl">Remember</label>
+            </div>
+            <a href="#" class="forgot text-xs text-[#f2f3f5] font-light">Forgot password?</a>
+        </div>
+        <div class="login-wrapper flex items-center justify-between mt-2.5 mb-25 ml-7.5">
+            <button class="login px-7.5 py-2.5 text-[#f2f3f5] font-light tracking-[1px] bg-[linear-gradient(-90deg,_#ee00ff,_#3dbeff)] rounded-[20px] shadow-[0_5px_20px_rgba(0,0,0,0.25),_inset_0_0_0_1px_rgba(0,0,0,0.1)] cursor-pointer">LOGIN</button>
+            <div class="no-account flex flex-col items-center ml-5">
+                <span class="forgot text-xs text-[#f2f3f5] font-light">Dont' have account?</span>
+                <a href="#" class="sign-up text-sm  text-[#f2f3f5] font-light">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <div class="w-25 h-25 bg-black absolute rounded-full -bottom-6.25 left-46.25 -z-1 opacity-50 shadow-[0_0_30px_10px_black] blur-[20px] scale-x-100 scale-y-[20%]"></div>
+</div>
+</body>
+</html>
