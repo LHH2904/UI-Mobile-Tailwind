@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Home Thermo Stat App</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="pt-sans h-screen text-[#a6aac8] flex justify-center items-center bg-[conic-gradient(from_-45deg,_#290769,_#0E1022,_#291F52,_#290769,_#0E1022,_#291F52,_#290769)]">
+    <div class="container bg-[#15191f] rounded-[20px] shadow-[0_0_20px_0_black] max-w-4xl mx-auto">
+        <div class="flex flex-col">
+            <div class="flex justify-between">
+                <div class="flex flex-col">
+                    <div class="flex flex-col p-10">
+                        <h2 class="heading text-base tracking-[1px] pb-7.5">WEEKLY STATUS</h2>
+                        <div class="flex">
+                            <div class="flex flex-col h-28 items-center">
+                                <div class="bar bg-[#251b3c] w-8 h-full rounded-2xl mx-1.25" style="height: 100%;"></div>
+                                <span class="x-axis-label text-[8px] font-bold mt-2.5">M</span>
+                            </div>
+                            <div class="flex flex-col h-28 items-center justify-end">
+                                <div class="bar bg-[#251b3c] w-8 h-full rounded-2xl mx-1.25" style="height: 50%;"></div>
+                                <span class="x-axis-label text-[8px] font-bold mt-2.5">T</span>
+                            </div>
+                            <div class="flex flex-col h-28 items-center justify-end">
+                                <div class="bar bg-[#251b3c] w-8 h-full rounded-2xl mx-1.25" style="height: 25%;"></div>
+                                <span class="x-axis-label text-[8px] font-bold mt-2.5">W</span>
+                            </div>
+                            <div class="flex flex-col h-28 items-center">
+                                <div class="bar w-8 h-full rounded-2xl mx-1.25 active bg-[linear-gradient(#7a59e9,_#2f225b)] relative flex justify-center" style="height: 100%;">
+                                    <div class="absolute w-2 h-2 bg-[#fd5f0a] rounded-full -top-3.75"></div>
+                                </div>
+                                <span class="x-axis-label text-[8px] font-bold mt-2.5">T</span>
+                            </div>
+                            <div class="flex flex-col h-28 items-center justify-end">
+                                <div class="bar bg-[#251b3c] w-8 h-full rounded-2xl mx-1.25" style="height: 70%;"></div>
+                                <span class="x-axis-label text-[8px] font-bold mt-2.5">F</span>
+                            </div>
+                            <div class="flex flex-col h-28 items-center justify-end">
+                                <div class="bar bg-[#251b3c] w-8 h-full rounded-2xl mx-1.25" style="height: 50%;"></div>
+                                <span class="x-axis-label text-[8px] font-bold mt-2.5">S</span>
+                            </div>
+                            <div class="flex flex-col h-28 items-center justify-end">
+                                <div class="bar bg-[#251b3c] w-8 h-full rounded-2xl mx-1.25" style="height: 100%;"></div>
+                                <span class="x-axis-label text-[8px] font-bold mt-2.5">S</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-10">
+                        <h2 class="heading text-base tracking-[1px] pb-7.5">HUMIDITY</h2>
+                        <div class="flex items-center">
+                            <div class="humidity-icon bg-[#251b3c] w-10 h-10 rounded-full flex justify-center items-center mr-5">
+                                <i class="ri-blur-off-line"></i>
+                            </div>
+                            <div class="humidity-icon bg-[#251b3c] w-10 h-10 rounded-full flex justify-center items-center mr-5">
+                                <i class="ri-drop-line"></i>
+                            </div>
+                            <div class="humidity-icon bg-[#251b3c] w-10 h-10 rounded-full flex justify-center items-center mr-5">
+                                <i class="ri-contrast-drop-2-fill"></i>
+                            </div>
+                            <div class="humidity-icon bg-[#251b3c] w-10 h-10 rounded-full flex justify-center items-center mr-5">
+                                <i class="ri-drop-fill"></i>
+                            </div>
+                            <h3 class="humidity-percent font-normal text-[20.8px] text-white ml-auto">30%</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex p-10">
+                    <div class="flex flex-col">
+                        <h2 class="heading text-base tracking-[1px] pb-7.5">TEMPERATURE</h2>
+                        <h1 class="temp text-white text-[112px]">63°</h1>
+                        <div class="flex mt-auto">
+                            <div class="humidity-icon bg-[#251b3c] w-10 h-10 rounded-full flex justify-center items-center mr-5">
+                                <i class="ri-sun-fill"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <h4 class="day-time text-[12.8px] font-normal">MORNING</h4>
+                                <h4 class="temp-value text-white font-normal">64°</h4>
+                            </div>
+                        </div>
+                        <div class="flex mt-3.75">
+                            <div class="humidity-icon bg-[#251b3c] w-10 h-10 rounded-full flex justify-center items-center mr-5">
+                                <i class="ri-sun-fill"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <h4 class="day-time text-[12.8px] font-normal">NIGHT</h4>
+                                <h4 class="temp-value text-white font-normal">79°</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indicator h-full w-16 bg-[#251b3c] rounded-4xl ml-7.5 relative flex flex-col justify-end items-center">
+                        <!-- Giả lập ::after -->
+                        <div class="absolute w-full h-[63%] bg-[linear-gradient(#cf72f1,_#7a5ced)] rounded-4xl"></div>
+
+                        <!-- Giả lập ::before -->
+                        <div class="absolute w-5 h-2.5 bg-white rounded-[5px] z-1" style="bottom: calc(63% - 30px);"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between p-10">
+                <div class="flex items-center">
+                    <i class="ri-settings-3-fill"></i>
+                    <span class="settings ml-2.5">Settings</span>
+                </div>
+                <label class="flex items-center">
+                    <div class="switch relative cursor-pointer">
+                        <input type="checkbox" class="sr-only peer">
+                        <div class="switch-bg h-7.5 w-12.5 bg-[#251b3c] transition-colors peer-checked:bg-[#fd5f0a] rounded-[15px]"></div>
+                        <div class="switch-indicator absolute w-5 h-5 rounded-full bg-[#fd5f0a] top-1.25 left-1.25 border-[5px] border-white transition-transform peer-checked:translate-x-full duration-200 ease-out"></div>
+                    </div>
+                    <span class="switch-label ml-2.5">On</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
