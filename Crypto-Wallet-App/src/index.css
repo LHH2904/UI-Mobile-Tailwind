@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-lato: 'Lato', sans-serif;
+    --color-dark-gray-1: #1d222c;
+    --color-dark-gray-2: #5e636c;
+    --color-dark-gray-3: #1f242b;
+    --color-light-gray-1: #9ba1b0;
+    --color-light-gray-2: #e8e9ef;
+    --color-light-gray-3: #858d9f;
+    --color-light-gray-4: #c1bfd9;
+    --color-light-gray-5: #78889f;
+    --color-light-gray-6: #f5f3fb;
+    --color-light-gray-7: #fcfbfe;
+    --color-light-purple: #aba9da;
+    --color-light-purple-2: #635fd1;
+
+    --breakpoint-tablet: 1170px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-light-gray-2);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-light-gray-3);
+    border-radius: 10px;
+}
+
+@media (max-width: 1170px) {
+    .custom-scrollbar {
+        margin-bottom: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: var(--color-light-purple-2);
+    }
+}
