@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="montserrat">
+    <div class="h-screen flex items-center justify-center bg-[linear-gradient(45deg,#031737,#183f5d,#0d1c30)]">
+        <div class="bg-[conic-gradient(#3492D0_0%,#3492D0_20%,#00ffff_28%,#62e7e7_30%,#38d8e3_32%,#58ecf7_34%,#3492D0_60%,#4A88B0_70%,#3DCBFD_76%,#3DCBFD_78%,#3492D0_80%,#3492D0_100%)] rounded-[40px] p-0.25 shadow-[0_0_50px_0_black] relative overflow-hidden">
+            <form
+                    class="flex flex-col items-center rounded-[2.5rem]
+                         bg-gradient-to-br from-[#1c5379] to-[#4da0d1] p-12
+                         before:absolute before:left-0 before:top-[40%] before:h-[30px] before:w-px
+                         before:bg-gradient-to-t before:from-[#39afe7] before:via-[#8effff] before:to-[#3ecafc]
+                         before:content-[''] before:[box-shadow:0_0_15px_5px_rgba(142,255,255,0.3),0_0_20px_15px_rgba(1,153,255,0.7)]
+                         after:absolute after:right-0 after:top-[56%] after:h-7.5 after:w-px
+                         after:bg-gradient-to-t after:from-[#19CBFB] after:via-[#89FCFF] after:to-[#19CBFB]
+                         after:content-[''] after:[box-shadow:0_0_15px_5px_rgba(1,255,242,0.75),0_0_15px_15px_rgba(114,255,255,0.3),0_0_20px_25px_rgba(1,153,255,1)]"
+            >
+                <div class="w-20 h-20 rounded-full border-[3px] border-[#47c9fc] flex items-center justify-center mb-12">
+                    <i class="fa-solid fa-camera text-[3rem] text-[#47c9fc]"></i>
+                </div>
+                <div class="relative">
+                    <i class="fa-solid fa-user absolute text-[#bcc0c2] left-3.75 top-1/2 -translate-y-1/2"></i>
+                    <input class="py-2.5 pr-2.5 pl-12.5 border-none bg-gradient-to-r from-[#002250] to-[#015696] mb-2.5 text-[#d5e1f6] outline-none placeholder:text-[#bcc0c2] " type="text" placeholder="Username">
+                </div>
+                <div class="relative">
+                    <i class="fa-solid fa-lock absolute text-[#bcc0c2] left-3.75 top-1/2 -translate-y-1/2"></i>
+                    <input class="py-2.5 pr-2.5 pl-12.5 border-none bg-gradient-to-r from-[#002250] to-[#015696] mb-2.5 text-[#d5e1f6] outline-none placeholder:text-[#bcc0c2]" type="password" placeholder="Password">
+                </div>
+                <div class="w-full flex justify-between items-center">
+                    <div>
+                        <input type="checkbox" id="cb">
+                        <label for="cb" class="text-xs text-[#bcc0c2]">Remember</label>
+                    </div>
+                    <a href="#" class="text-xs text-[#bcc0c2] italic hover:text-red-400">Forgot Password</a>
+                </div>
+                <button class="bg-gradient-to-r from-[#002250] to-[#015696] w-full p-2.5 rounded-[5px] border-none mt-5 text-[#d6e1f6] cursor-pointer font-semibold tracking-[2px]">LOGIN</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
