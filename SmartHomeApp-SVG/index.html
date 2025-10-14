@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Home App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-[linear-gradient(to_bottom_right,_#dbe4f1_50%,_#8EA0D5_100%)]">
+    <div class="relative w-80 h-175 rounded-[30px] bg-[#EDF0FA] shadow-2xl overflow-hidden">
+        <div>
+            <svg width="320" height="700">
+                <path fill="url(#gradient)" opacity="1" stroke-linecap="round" stroke-linejoin="round"
+                      d="M0,0 L0,250 Q 30,525 160,650 Q 290,525 320,250 L320,0 L0,0"/>
+                <LinearGradient id="gradient" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#F6F8FC"/>
+                    <stop offset="100%" stop-color="#C8D1EC"/>
+                </LinearGradient>
+            </svg>
+        </div>
+        <div class="flex flex-col items-center absolute top-0 w-full">
+            <div class="flex flex-row w-full pt-10 justify-center">
+                <div class="w-1 h-1 bg-[#0E171D] rounded mx-1"></div>
+                <div class="w-1 h-1 bg-[#CDCCDE] rounded mx-1"></div>
+                <div class="w-1 h-1 bg-[#CDCCDE] rounded mx-1"></div>
+                <div class="w-1 h-1 bg-[#CDCCDE] rounded mx-1"></div>
+            </div>
+            <span class="text-xl font-bold tracking-widest mt-2">MORNING</span>
+            <span class="text-[8px] font-extrabold tracking-widest text-[#ADAAE7]">PRESETS</span>
+            <div class="flex w-full justify-between px-24 mt-10">
+                <svg width="22" height="22">
+                    <path class="stroke-[#ADAAE7]" stroke-width="1" fill="none" opacity="1" stroke-linecap="round"
+                          stroke-linejoin="round" d="M21,1 Q -1,0 1,21"/>
+                </svg>
+                <svg width="22" height="22" style="transform: rotate(90deg)">
+                    <path class="stroke-[#ADAAE7]" stroke-width="1" fill="none" opacity="1" stroke-linecap="round"
+                          stroke-linejoin="round" d="M21,1 Q -1,0 1,21"/>
+                </svg>
+            </div>
+            <span class="text-[8px] font-extrabold tracking-widest text-[#ADAAE7] mt-4">BLINDS</span>
+            <div class="flex flex-row w-full justify-between items-center px-8 py-4">
+                <svg width="22" height="42">
+                    <path class="stroke-[#ADAAE7]" stroke-width="1" fill="none" opacity="1" stroke-linecap="round"
+                          stroke-linejoin="round" d="M11,0 L6,12 Q 1,21 6,30 L11,41"/>
+                </svg>
+                <div class="flex flex-col items-center bg-[#FDFDFD] px-12 py-6 my-5 rounded-3xl shadow-[0_15px_25px_0_rgba(0,0,0,0.05)]">
+                    <span class="text-[8px] font-extrabold tracking-widest text-[#ADAAE7] mb-1">PLAYLIST</span>
+                    <span class="text-[10px] font-extrabold tracking-widest text-[#0E171D]">DEEP HOUSE</span>
+                </div>
+                <svg width="22" height="42" style="transform: rotate(180deg);">
+                    <path class="stroke-[#ADAAE7]" stroke-width="1" fill="none" opacity="1" stroke-linecap="round"
+                          stroke-linejoin="round" d="M11,0 L6,12 Q 1,21 6,30 L11,41"/>
+                </svg>
+            </div>
+            <span class="text-[8px] font-extrabold tracking-widest text-[#ADAAE7]">COFFEE</span>
+            <div class="flex w-full justify-between px-24 mt-10 items-end">
+                <svg width="22" height="22" style="transform: rotate(-90deg)">
+                    <path class="stroke-[#ADAAE7]" stroke-width="1" fill="none" opacity="1" stroke-linecap="round"
+                          stroke-linejoin="round" d="M21,1 Q -1,0 1,21"/>
+                </svg>
+                <span class="text-[8px] font-extrabold tracking-widest text-[#ADAAE7]">+3</span>
+                <svg width="22" height="22" style="transform: rotate(180deg)">
+                    <path class="stroke-[#ADAAE7]" stroke-width="1" fill="none" opacity="1" stroke-linecap="round"
+                          stroke-linejoin="round" d="M21,1 Q -1,0 1,21"/>
+                </svg>
+            </div>
+            <div class="relative">
+                <svg width="200" height="200" class="absolute bottom-10">
+                    <linearGradient id="gradient-2" gradientTransform="rotate(90)">
+                        <stop offset="0%" stop-color="#FCFBFE"/>
+                        <stop offset="100%" stop-color="#EFF0F9"/>
+
+                    </linearGradient>
+                    <path fill="url(#gradient-2)" d="M100,200 Q 50,150 50,100 Q 100,75 150,100 Q 150,150 100,200"/>
+                    <circle cx="80" cy="120" r="3" class="fill-[#0e171d]"/>
+                    <circle cx="120" cy="120" r="3" class="fill-[#0e171d]"/>
+                    <circle cx="100" cy="150" r="3" class="fill-[#0e171d]"/>
+                </svg>
+                <svg width="200" height="200">
+                    <linearGradient id="gradient-3" gradientTransform="rotate(90)">
+                        <stop offset="0%" stop-color="#CFD7EE"/>
+                        <stop offset="50%" stop-color="#CFD7EE"/>
+                        <stop offset="100%" stop-color="#EAF0FA"/>
+
+                    </linearGradient>
+                    <path stroke="url(#gradient-3)" fill="none" d="M50,100 Q 50,150 100,190 Q 150,150 150,100"/>
+                </svg>
+            </div>
+        </div>
+        <div class="flex absolute bottom-16 justify-between w-full px-10">
+            <i class="fa-solid fa-chart-column text-[#0E171D] text-[1.5em]"></i>
+            <i class="fa-solid fa-gear text-[#0E171D] text-[1.5em]"></i>
+        </div>
+    </div>
+</body>
+
+</html>
