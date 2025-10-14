@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Home App 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-[linear-gradient(to_bottom_right,_#dbe4f1_20%,_#8EA0D5_100%)]">
+    <div class="w-75 h-167.5 rounded-[30px] bg-[linear-gradient(to_bottom,_white,_#d1d6ee)] overflow-hidden">
+        <div class="flex justify-center pt-14">
+            <div class="w-62.5 h-62.5 bg-[conic-gradient(from_-45deg_at_center,_#5bdafb_0%,_#f3a297_15%,_#f3a297_40%,_#ada7e6_60%,_#8285ef_80%,_#5bdafb_100%)] shadow-[0_20px_25px_0_rgba(0,0,0,0.15)] rounded-full">
+                <div class="w-62.5 h-62.5 bg-[conic-gradient(from_-45deg_at_center,_rgba(255,255,255,0.5)_0%,_transparent_100%)] rounded-full flex justify-center items-center">
+                    <div class="w-52.5 h-52.5 shadow-[0_20px_20px_0_rgba(0,0,0,0.15)] bg-white rounded-full flex justify-center items-center">
+                        <div class="[transform:rotate(225deg)_translateX(90px)] bg-[#0E171D] h-1 w-1 rounded-full"></div>
+                        <span class="absolute text-5xl font-light text-[#0E171D]">18°</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between px-12">
+            <span class="text-2xl font-light text-[#7F80E5]">15°</span>
+            <span class="text-2xl font-light text-[#E1B5C6]">30°</span>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <span class="text-[#ADAAE7]">°</span>
+            <span class="app-font-sm tracking-widest text-[#ADAAE7] -mt-2">AUTO</span>
+        </div>
+        <div class="flex px-6 mt-4 justify-between">
+            <div class="flex flex-col bg-white h-36 w-20 items-center justify-between py-4 rounded-2xl shadow-[0_15px_25px_0_rgb(0_0_0/0.1)]">
+                <i class="fa-regular fa-snowflake text-3xl text-[#0E171D]"></i>
+                <span class="text-[10px] font-extrabold  text-[#0E171D] tracking-widest">COLD</span>
+            </div>
+            <div class="flex flex-col h-36 w-20 items-center justify-between py-4 rounded-2xl">
+                <i class="fa-solid fa-fan text-3xl text-[#ADAAE7]"></i>
+                <span class="text-[10px] font-extrabold  text-[#ADAAE7] tracking-widest">FAN</span>
+            </div>
+            <div class="flex flex-col h-36 w-20 items-center justify-between py-4 rounded-2xl">
+                <i class="fa-solid fa-bacon text-3xl text-[#ADAAE7]"></i>
+                <span class="text-[10px] font-extrabold  text-[#ADAAE7] tracking-widest">DRY</span>
+            </div>
+        </div>
+        <div class="text-center mt-6 text-[10px] font-extrabold  text-[#0E171D] tracking-widest">CONDITIONER</div>
+        <div class="flex justify-center mt-2">
+            <div class="w-px h-3 bg-gray-400"></div>
+        </div>
+        <div class="flex justify-between px-6 mt-6">
+            <i class="fa-regular fa-clone text-[#0E171D]"></i>
+            <i class="fa-solid fa-repeat text-[#0E171D]"></i>
+        </div>
+        <div class="flex justify-center relative">
+            <div class="w-48 h-48 bg-red-500 transform rotate-45 rounded-[50px] bg-[linear-gradient(to_top_right,_#9bace4,_#fff)]"></div>
+            <i class="fa-solid fa-power-off absolute text-2xl text-[#0E171D]"></i>
+        </div>
+    </div>
+</body>
+</html>
