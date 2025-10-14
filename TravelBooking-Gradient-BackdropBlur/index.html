@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-[#f3f3ff] min-h-235 w-full h-screen flex justify-center items-end pb-10">
+        <div class="w-112.5 h-112.5 bg-gradient-to-b from-[#fa39ad] from-[40%] to-[#fe6c4c] to-[50%] blur-[120px] rounded-full"></div>
+        <div class="absolute top-16 flex flex-col w-full items-center">            <div class="flex items-center w-full">
+                <div class="flex px-6">
+                    <div class="h-2 w-2 rounded-full mx-1 bg-[#fe624d] border-2 border-[#ee5e4b]"></div>
+                    <div class="h-2 w-2 rounded-full mx-1 bg-[#ffc432] border-2 border-[#f2bd3a]"></div>
+                    <div class="h-2 w-2 rounded-full mx-1 bg-[#5bde47] border-2 border-[#5fc651]"></div>
+                </div>
+                <div class="flex bg-white items-center w-5/12 px-6 py-4 rounded-md shadow-[0_10px_25px_0_rgba(0,0,0,0.03)]">
+                    <i class="fa-solid fa-star text-[#ffa41d] text-xs"></i>
+                    <span class="font-bold text-[#292b48] ml-4 mr-auto text-xs">wizzair.com</span>
+                    <i class="fa-solid fa-ellipsis text-[#9EA1CF]"></i>
+                </div>
+                <div class="mr-auto flex bg-[#F7F8FF] rounded-md px-6 py-4 ml-3 shadow-[0_10px_25px_0_rgba(0,0,0,0.03)]">
+                    <i class="fa-brands fa-dribbble text-[#E04B85] mr-2"></i>
+                    <span class="font-bold text-[#292b48] text-xs">Dribbble</span>
+                </div>
+                <div class="flex bg-white px-6 py-4 shadow-[0_10px_25px_0_rgba(0,0,0,0.03)] rounded-md mr-6">
+                    <span class="font-bold text-[#292b48] text-xs">Book now</span>
+                    <div class="w-px bg-[#F7F8FF]-2 mx-4"></div>
+                    <i class="fa-regular fa-user mr-2 text-[#292b48]"></i>
+                    <i class="fa-solid fa-angle-down text-xs text-[#292b48]"></i>
+                </div>
+            </div>
+            <div class="flex flex-col text-center my-36">
+                <span class="font-semibold text-4xl mb-4 bg-gradient-to-tr from-[#fb28cd] to-[#7c65d7] bg-clip-text text-transparent">Where would you like to go?</span>
+                <span class="text-[#292b48] font-semibold">Explore your travel opportunities with us!</span>
+            </div>
+            <div class="bg-white/50 w-10/12 px-6 pt-12 pb-16 shadow-[0_10px_25px_0_rgba(0,0,0,0.03)] rounded-xl backdrop-blur-50">
+                <div class="flex pr-6">
+                    <span class="font-semibold text-sm text-[#877F95] w-14 mx-12  flex justify-center items-end [&.active]:relative [&.active]:text-[#292b48]
+                      [&.active]:after:content-[''] [&.active]:after:absolute [&.active]:after:w-[200%] [&.active]:after:h-[2px]
+                      [&.active]:after:bg-[#292b48] [&.active]:after:bottom-[-20px]">Flights</span>
+                    <span class="font-semibold text-sm text-[#877F95] w-14 mx-12 active flex justify-center items-end [&.active]:relative [&.active]:text-[#292b48]
+                      [&.active]:after:content-[''] [&.active]:after:absolute [&.active]:after:w-[200%] [&.active]:after:h-[2px]
+                      [&.active]:after:bg-[#292b48] [&.active]:after:bottom-[-20px]">Hotels</span>
+                    <span class="font-semibold text-sm text-[#877F95] w-14 mx-12 mr-auto  flex justify-center items-end [&.active]:relative [&.active]:text-[#292b48]
+                      [&.active]:after:content-[''] [&.active]:after:absolute [&.active]:after:w-[200%] [&.active]:after:h-[2px]
+                      [&.active]:after:bg-[#292b48] [&.active]:after:bottom-[-20px]"
+                    >
+                        Cars
+                    </span>
+                    <label class="flex items-center cursor-pointer">
+                        <span class="font-semibold text-sm text-[#292b48] mr-6">One way</span>
+                        <span class="relative inline-block  translate-y-[3px]">
+                            <input type="checkbox" class="hidden peer">
+                            <span class="h-6 w-11 bg-[#fb28cd] rounded-[15px] transition-all duration-200 ease-out peer-checked:bg-[#e9ecfa] inline-block"></span>
+                            <span class="absolute h-5 w-5 bg-[#fb28cd] border-[5px] border-white rounded-full top-0.5 left-0.5 transition-all duration-200 ease-out peer-checked:translate-x-[100%]"></span>
+                        </span>
+                    </label>
+                </div>
+                <div class="flex mt-16">
+                    <div class="bg-white/80 mx-6 flex flex-col w-1/3 p-6 rounded-xl border-2 border-white">
+                        <span class="font-semibold text-xs text-[#9EA1CF]">Leaving from</span>
+                        <span class="font-semibold text-lg text-[#292b48]">Georgia, Tbilisi</span>
+                    </div>
+                    <div class="bg-white/80 mx-6 flex flex-col w-1/3 p-6 rounded-xl border-2 border-white">
+                        <span class="font-semibold text-xs text-[#9EA1CF]">Destination</span>
+                        <span class="font-semibold text-lg text-[#FB28CD]">France, Paris</span>
+                    </div>
+                    <div class="bg-white/80 mx-6 flex flex-col w-1/3 p-6 rounded-xl border-2 border-white">
+                        <span class="font-semibold text-xs text-[#9EA1CF]">Passengers</span>
+                        <span class="font-semibold text-lg text-[#292b48]">2 adults, 3 children, 1 pet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
